@@ -25,8 +25,8 @@ response = requests.post(url, data=payload, headers=headers)
 # Check if request was successful
 if response.status_code == 200:
     try:
-        data = response.json() 
-        print("Response:", data) 
+        data = response.json()            
+        # print("Response:", data) 
 
         # Extract the Featured Sheet PDF URL
         if data.get("success") and data.get("data"):
